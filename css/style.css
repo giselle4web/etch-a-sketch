@@ -1,5 +1,22 @@
 body {
-  background-color: grey;
+  background-color: pink;
+}
+
+h1 {
+  font-style: italic;
+  text-align: center;
+  font-size: 45px;
+}
+
+#btn-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.container {
+  border: 4px solid black;
 }
 
 .container_one {
@@ -67,9 +84,81 @@ body {
 }
 
 .squares {
-  background-color: pink;
+  background-color: grey;
   margin: 15px;
   width: 100px;
   height: 100px;
+}
+
+.container_one .squares:hover {
+  background-color: purple;
+}
+
+.container_two .squares:hover {
+  background-color: cyan;
+}
+
+.container_three .squares:hover {
+  background-color: white;
+}
+
+.container_three .squares:hover {
+  background-color: purple;
+}
+
+.container_four .squares:hover {
+  background-color: cyan
+}
+
+.container_five .squares:hover {
+  background-color: white;
+}
+
+.container_six .squares:hover {
+  background-color: purple;
+}
+
+.container_seven .squares:hover {
+  background-color: cyan;
+}
+
+.container_eight .squares:hover {
+  background-color: white;
+}
+
+.container_nine .squares:hover {
+  background-color: purple;
+}
+
+.container_ten .squares:hover {
+  background-color: cyan;
+}
+
+.container_three .squares:hover {
+  background-color: white;
+}
+
+.container_eleven .squares:hover {
+  background-color: purple;
+}
+
+.container_twelve .squares:hover {
+  background-color: cyan;
+}
+
+.container_thirteen .squares:hover {
+  background-color: white;
+}
+
+.container_fourteen .squares:hover {
+  background-color: purple;
+}
+
+.container_fifteen .squares:hover {
+  background-color: cyan;
+}
+
+.container_sixteen .squares:hover {
+  background-color: white;
 }
 

@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 const div = document.createElement("div");
 container.classList.add("container");
 const container_one = document.createElement("div");
-body.append(container);
+body.append(container)
 
 // One
 
@@ -242,11 +242,11 @@ const container_thirteen = document.createElement("div");
 container.append(container_thirteen);
 container_thirteen.classList.add("container_thirteen");
 
-const div193 = document.createElement("div"), div194 = document.createElement("div"), div195 = document.createElement("div"), div196 = document.createElement("div"), div197 = document.createElement("div"), div198 = document.createElement("div"), div199 = document.createElement("div"), div200 = document.createElement("div"), div201 = document.createElement("div"), div203 = document.createElement("div"), div204 = document.createElement("div"), div205 = document.createElement("div"),div206 = document.createElement("div"), div207 = document.createElement("div"), div208= document.createElement("div");
+const div193 = document.createElement("div"), div194 = document.createElement("div"), div195 = document.createElement("div"), div196 = document.createElement("div"), div197 = document.createElement("div"), div198 = document.createElement("div"), div199 = document.createElement("div"), div200 = document.createElement("div"), div201 = document.createElement("div"), div202 = document.createElement("div"), div203 = document.createElement("div"), div204 = document.createElement("div"), div205 = document.createElement("div"),div206 = document.createElement("div"), div207 = document.createElement("div"), div208= document.createElement("div"), missing_div_five = document.createElement("div");
 
-container_thirteen.append(div193, div194, div195, div196, div197, div198, div199, div200, div201, div202, div203, div204, div205, div206, div207, div208);
+container_thirteen.append(div193, div194, div195, div196, div197, div198, div199, div200, div201, div202, div203, div204, div205, div206, div207, div208, missing_div_five);
 
-div193.classList.add("squares"), div194.classList.add("squares"), div195.classList.add("squares"), div196.classList.add("squares"), div197.classList.add("squares"), div198.classList.add("squares"), div199.classList.add("squares"), div200.classList.add("squares"), div201.classList.add("squares"), div202.classList.add("squares"), div203.classList.add("squares"), div204.classList.add("squares"), div205.classList.add("squares"), div206.classList.add("squares"), div207.classList.add("squares");
+div193.classList.add("squares"), div194.classList.add("squares"), div195.classList.add("squares"), div196.classList.add("squares"), div197.classList.add("squares"), div198.classList.add("squares"), div199.classList.add("squares"), div200.classList.add("squares"), div201.classList.add("squares"), div202.classList.add("squares"), div203.classList.add("squares"), div204.classList.add("squares"), div205.classList.add("squares"), div206.classList.add("squares"), div207.classList.add("squares"), missing_div_five.classList.add("squares");
 
 // Fourteen
 
@@ -272,14 +272,73 @@ container_fifteen.append(div225, div226, div227, div228, div229, div230, div231,
 
 div225.classList.add("squares"), div226.classList.add("squares"), div227.classList.add("squares"), div228.classList.add("squares"), div229.classList.add("squares"), div230.classList.add("squares"), div231.classList.add("squares"), div232.classList.add("squares"), div233.classList.add("squares"), div234.classList.add("squares"), div235.classList.add("squares"), div236.classList.add("squares"), div237.classList.add("squares"), div238.classList.add("squares"), div239.classList.add("squares"), div240.classList.add("squares");
 
-// Fifteen
+// Sixteen
 
 const container_sixteen = document.createElement("div");
 container.append(container_sixteen);
 container_sixteen.classList.add("container_sixteen");
 
-const div241 = document.createElement("div"), div242 = document.createElement("div"), div243 = document.createElement("div"), div244 = document.createElement("div"), div245 = document.createElement("div"), div246 = document.createElement("div"), div247 = document.createElement("div"), div248 = document.createElement("div"), div249 = document.createElement("div"), div250 = document.createElement("div"), div251 = document.createElement("div"), div252 = document.createElement("div"),div253 = document.createElement("div"), div254 = document.createElement("div"), div255 = document.createElement("div"), div256 = document.createElement("div");
+const div241 = document.createElement("div"), div242 = document.createElement("div"), div243 = document.createElement("div"), div244 = document.createElement("div"), div245 = document.createElement("div"), div246 = document.createElement("div"), div247 = document.createElement("div"), div248 = document.createElement("div"), div249 = document.createElement("div"), div250 = document.createElement("div"), div251 = document.createElement("div"), div252 = document.createElement("div"),div253 = document.createElement("div"), div254 = document.createElement("div"), div255 = document.createElement("div"), div256 = document.createElement("div"), missing_div_six = document.createElement("div");
 
-container_sixteen.append(div241, div242, div243, div244, div245, div246, div247, div248, div249, div250, div251, div252, div253, div254, div255, div256);
+container_sixteen.append(div241, div242, div243, div244, div245, div246, div247, div248, div249, div250, div251, div252, div253, div254, div255, div256, missing_div_six);
 
-div241.classList.add("squares"), div242.classList.add("squares"), div243.classList.add("squares"), div243.classList.add("squares"), div244.classList.add("squares"), div245.classList.add("squares"), div246.classList.add("squares"), div247.classList.add("squares"), div248.classList.add("squares"), div249.classList.add("squares"), div250.classList.add("squares"), div251.classList.add("squares"), div252.classList.add("squares"), div253.classList.add("squares"), div254.classList.add("squares"), div255.classList.add("squares");
+div241.classList.add("squares"), div242.classList.add("squares"), div243.classList.add("squares"), div243.classList.add("squares"), div244.classList.add("squares"), div245.classList.add("squares"), div246.classList.add("squares"), div247.classList.add("squares"), div248.classList.add("squares"), div249.classList.add("squares"), div250.classList.add("squares"), div251.classList.add("squares"), div252.classList.add("squares"), div253.classList.add("squares"), div254.classList.add("squares"), div255.classList.add("squares"), missing_div_six.classList.add("squares");
+
+// Random color variables
+let colors = ['#ff0000', '#00ff00', '#0000ff'];
+let random_color = colors[Math.floor(Math.random() * colors.length)];
+
+let mySquares = document.querySelectorAll("squares")
+
+let answer;
+document.getElementById("prompt").addEventListener('click', function() {
+  answer = prompt("How many grids do you want?");
+  if(answer == 1) {
+    container_one, container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove(), container_nine.remove(), container_ten.remove(), container_eleven.remove(), container_twelve.remove(), container_thirteen.remove(), container_fourteen.remove(), container_fifteen.remove(), container_sixteen.remove();
+  }
+  if (answer == 2) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove(), container_nine.remove(), container_ten.remove(), container_eleven.remove(), container_twelve.remove(), container_thirteen.remove(), container_fourteen.remove());
+  }
+  if (answer == 3) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove(), container_nine.remove(), container_ten.remove(), container_eleven.remove(), container_twelve.remove(), container_thirteen.remove());
+  }
+  if (answer == 4) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove(), container_nine.remove(), container_ten.remove(), container_eleven.remove(), container_twelve.remove().remove());
+  }
+  if (answer == 5) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove(), container_nine.remove(), container_ten.remove(), container_eleven.remove());
+  }
+  if (answer == 6) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove(), container_nine.remove(), container_ten.remove());
+  }
+  if (answer == 7) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove(), container_nine.remove().remove());
+  }
+  if (answer == 8) {
+  (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove(), container_seven.remove(), container_eight.remove());
+  }
+  if (answer == 9) {
+    (container_one, container_two, container_three, container_four, container_five, container_six, container_seven.remove());
+  }
+  if (answer == 10) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove(), container_six.remove());
+  }
+  if (answer == 11) {
+    (container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove(), container_five.remove());
+  }
+  if (answer == 12) {
+    container_one.remove(), container_two.remove(), container_three.remove(), container_four.remove();
+  }
+  if (answer == 13) {
+    (container_one.remove(),container_two.remove(),container_three.remove().remove());
+  }
+  if (answer == 14) {
+    (container_one,container_two.remove());
+  }
+  if (answer == 15) {
+    (container_one.remove());
+  }
+
+  return answer;
+});
+
