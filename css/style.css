@@ -15,6 +15,8 @@ h1 {
 }
 
 
+
+
 .container {
   border: 4px solid black;
 }
@@ -88,7 +90,38 @@ h1 {
   margin: 15px;
   width: 100px;
   height: 100px;
+  animation-name: fadeItOut;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  
 }
+
+.squares:hover {
+  animation-name: fadeItIn;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeItIn {
+  0% {
+    background: rgba(50, 60, 95, 0.3);
+  }
+  100% {
+    background: rgba(50, 60, 95, 1);
+  }
+}
+
+@keyframes fadeItOut {
+  0% {
+    background: rgba(50, 60, 95, 1);
+  }
+  100% {
+    background: rgba(50, 60, 95, 0.3);
+  }
+}
+
 
 .container_one .squares:hover {
   background-color: purple;
