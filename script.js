@@ -284,11 +284,6 @@ container_sixteen.append(div241, div242, div243, div244, div245, div246, div247,
 
 div241.classList.add("squares"), div242.classList.add("squares"), div243.classList.add("squares"), div243.classList.add("squares"), div244.classList.add("squares"), div245.classList.add("squares"), div246.classList.add("squares"), div247.classList.add("squares"), div248.classList.add("squares"), div249.classList.add("squares"), div250.classList.add("squares"), div251.classList.add("squares"), div252.classList.add("squares"), div253.classList.add("squares"), div254.classList.add("squares"), div255.classList.add("squares"), missing_div_six.classList.add("squares");
 
-// Random color variables
-let colors = ['#ff0000', '#00ff00', '#0000ff'];
-let random_color = colors[Math.floor(Math.random() * colors.length)];
-
-let mySquares = document.querySelectorAll("squares")
 
 let answer;
 document.getElementById("prompt").addEventListener('click', function() {
@@ -341,4 +336,10 @@ document.getElementById("prompt").addEventListener('click', function() {
 
   return answer;
 });
+
+// Random color variables
+let colors = ['#ff0000', '#00ff00', '#0000ff'];
+let random_color = colors[Math.floor(Math.random() * colors.length)];
+
+let mySquares = document.querySelectorAll("squares")
 
