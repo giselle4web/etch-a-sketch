@@ -337,9 +337,3 @@ document.getElementById("prompt").addEventListener('click', function() {
   return answer;
 });
 
-// Random color variables
-let colors = ['#ff0000', '#00ff00', '#0000ff'];
-let random_color = colors[Math.floor(Math.random() * colors.length)];
-
-let mySquares = document.querySelectorAll("squares")
-

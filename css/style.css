@@ -103,51 +103,51 @@ h1 {
 }
 
 .container_three .squares:hover {
-  background-color: purple;
+  background-color: red;
 }
 
 .container_four .squares:hover {
-  background-color: cyan
+  background-color: blue
 }
 
 .container_five .squares:hover {
-  background-color: white;
+  background-color: orange;
 }
 
 .container_six .squares:hover {
-  background-color: purple;
+  background-color: greenyellow;
 }
 
 .container_seven .squares:hover {
-  background-color: cyan;
+  background-color: purple;
 }
 
 .container_eight .squares:hover {
-  background-color: white;
+  background-color: cyan;
 }
 
 .container_nine .squares:hover {
-  background-color: purple;
+  background-color: white;
 }
 
 .container_ten .squares:hover {
-  background-color: cyan;
+  background-color: blue;
 }
 
 .container_three .squares:hover {
-  background-color: white;
+  background-color: orange;
 }
 
 .container_eleven .squares:hover {
-  background-color: purple;
+  background-color: red;
 }
 
 .container_twelve .squares:hover {
-  background-color: cyan;
+  background-color: yellow;
 }
 
 .container_thirteen .squares:hover {
-  background-color: white;
+  background-color: pink;
 }
 
 .container_fourteen .squares:hover {
